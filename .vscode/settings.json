@@ -1,0 +1,4 @@
+{
+    "container.imageLocation": "https://ktock.github.io/image-example/amd64-curl-debian-wasi",
+    "container.imageChunks": 5
+}

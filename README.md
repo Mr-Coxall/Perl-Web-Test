@@ -1,42 +1,12 @@
-# Debian container on VS Code
+# Perl Web Test
 
-Example of https://github.com/ktock/vscode-container-wasm
+## How to use this repo
+1. Open this repo into [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) version:
+  - (if the terminal does not work, you may need to add `?vscode-coi=on` query manually at the end of the URL)
 
-1. Open this repo on `github.dev` : https://github.dev/ktock/vscode-container-wasm-debian-example?vscode-coi=on (if using `.` shortcut key, you need to add `?vscode-coi=on` query manually in the URL)
-2. Install `ktock.container-wasm` extension.
-3. Run `> Run Container On Browser` in the command pallete. Then the container will be launched with the Terminal (can take some time to start the container)
+2. Ensure the `ktock.container-wasm` extension is installed (it should be !).
+3. Open the `Command Pallet` in VS Code and run the `Run Container On Browser` command. The container will launched the terminal (be patient it will take a minute).
+4. The terminal will open in the root directory (`/`). Change directories to `workspace` (`cd workspace`) to be in the same directory as VS Code's file explorer. 
 
-![Debian Container on browser](./docs/vscode-container-wasm-debian.png)
-
-## Container
-
-This will launch the following `debian:sid-slim`-based container served from https://ktock.github.io/container2wasm-demo/
-
-```dockerfile
-FROM debian:sid-slim
-RUN apt-get update && apt-get install -y curl
-```
-
-The workspace is visible at `/workspace` in the container.
-
-Note that this extension doesn't require remote container.
-This extension downloads the Wasm image converted from the container and runs it in the WebAssembly VM in your browser.
-
-You can customize `setting.json` if you want to load other containers.
-
-## Networking
-
-Running the following in the container will get the contents of the GitHub Pages.
-
-```
-$ curl https://ktock.github.io/container2wasm-demo/
-```
-
-HTTP(S) networking is available in the contaienr with restrictions by the browser (CORS-restricted and no control over [Forbidden headers](https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name)). (see also the project [`README`](../README.md)).
-
-## More info about the container
-
-The container is served from [container2wasm-demo](https://github.com/ktock/container2wasm-demo) repo.
-Please see that repo for more information.
-
-For more info about the extension: https://github.com/ktock/vscode-container-wasm
+5. To run a Perl program
+- `perl ./hello_world.pl`

@@ -1,5 +1,13 @@
 {
     "recommendations": [
-        "ktock.container-wasm"
+        "ktock.container-wasm",
+        "hediet.vscode-drawio",
+        "ritwickdey.LiveServer",
+        "oderwat.indent-rainbow",
+        "PKief.material-icon-theme",
+        "GitHub.github-vscode-theme",
+        "sohamkamani.code-eol",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "MS-vsliveshare.vsliveshare"
     ]
 }

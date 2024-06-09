@@ -12,3 +12,5 @@
 
 5. To run a Perl program
 - `perl ./hello_world.pl`
+
+6. When ready to commit your code back to GitHub, use the `Source Control` button in the Activity Bar on the left hand side.
